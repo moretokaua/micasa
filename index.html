@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SK8</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="images/logo.svg" alt="Logo">
+                <span>SK8</span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="1000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="images/street.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Street</h5>
+                        <a href="https://www.tricks.com.br/blog/como-surgiu-skate-street/" class="btn btn-dark">Saiba mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/longboard.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Longboard</h5>
+                        <a href="http://academiaupper.com.br/tudo-sobre-longboard-fique-por-dentro-dessa-modalidade/" class="btn btn-dark">Saiba mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/cruiser.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Cruiser</h5>
+                        <a href="https://www.redbull.com/br-pt/sergio-yuppie-da-importantes-dicas-para-escolher-um-skate-cruiser" class="btn btn-dark">Saiba mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/oldschool.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Old School</h5>
+                        <a href="https://www.xtreme-skate.com/br/s/15/shapes-de-skateboard-old-school" class="btn btn-dark">Saiba mais</a>
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Boards</h5>
+                            <p class="card-text secondary-color">Compre seu skate aqui.</p>
+                            <a href="https://www.cbskateshop.com.br" class="btn btn-dark">Veja</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-disc"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Manobras</h5>
+                            <p class="card-text secondary-color">Tutoriais para manobras.</p>
+                            <a href="https://www.princeofstreets.com.br" class="btn btn-dark">Veja</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-buildings"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Pistas</h5>
+                            <p class="card-text secondary-color">Conheça as pistas mais famosas.</p>
+                            <a href="https://www.sessionstore.com.br" class="btn btn-dark">Veja</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Acessórios</h5>
+                            <p class="card-text secondary-color">Luvas, tênis e roupas.</p>
+                            <a href="https://cbskateshop.com.br/acessorios/" class="btn btn-dark">Veja</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Modalidades</h2>
+            <p class="subtitle secondary-color">Conheça as diferentes modalidades e veja com qual você se identifica.</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="images/freestyle.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Freestyle</p>
+                        <h3>Modalidade com foco em manobras criativas no solo, sem obstáculos.</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/streett.jpeg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Street</p>
+                        <h3>Modalidade com foco em manobras que utilizam obstáculos.</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/longboard.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Longboard Dancing</p>
+                        <h3>Modalidade que possui foco em dançar em cima do skate.</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/downhillspeed.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Downhill Speed</p>
+                        <h3>Modalidade que tem como objetivo atingir grandes velocidades com o skate.</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/downhillslide.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Downhill Slide</p>
+                        <h3>Modalidade que foca em deslizar por ladeiras com o skate.</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/vert.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Vertical</p>
+                        <h3>Modalidade com foco em manobras no ar, utilizando rampas enormes para subir aos céus.</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+
+    <!-- FOOTER -->
+
+    <!-- Informações -->
+
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4">
+                            <h2>
+                                SK8
+                            </h2>
+                        </section>
+
+                        <section class="col-12 col-md-4">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadastroModal">
+                                Cadastrar
+                              </button>
+                              
+                              <!-- Modal de Cadastro -->
+                              <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <!-- Formulário de Cadastro -->
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="nome">Nome:</label>
+                                          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="email">Email:</label>
+                                          <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="senha">Senha:</label>
+                                          <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="cpf">CPF:</label>
+                                          <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="dataNascimento">Data de Nascimento:</label>
+                                          <input type="date" class="form-control" id="dataNascimento">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </section>
+
+                        <section class="col-12 col-md-6" id="google-map">
+                            <iframe src="https://www.google.com/maps/place/Sesi-SP/@-20.9354525,-48.5046085,19.37z/data=!4m20!1m13!4m12!1m4!2m2!1d-48.5097472!2d-20.9256448!4e1!1m6!1m2!1s0x94bbe469e09506f1:0x336e767ffea97cdf!2scoordernadas+sesi+bebdouro+sp!2m2!1d-48.5049015!2d-20.9351379!3m5!1s0x94bbe469e09506f1:0x336e767ffea97cdf!8m2!3d-20.9351379!4d-48.5049015!16s%2Fg%2F11b6nn7qdj?entry=ttu" width="250" height="250" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-reffer-when-downgrade"></iframe>
+                        </section>
+
+                        <section class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </section>
+                    </section>
+                </section>
+                  
+
+                <!-- Bootstrap JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous" defer></script>
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=7b7d3af3e75d3aa2&callback=inicializarMapa"></script>
+
+</body>
+
+</html>
